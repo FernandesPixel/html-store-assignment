@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>...</title>
+  <title>Loja bonita</title>
   <meta charset="utf-8">
 </head>
 <body>
+  <h1>Loja bonita</h1>
+  <h2>Veja nossos produtos</h2>
 
+  <div>
+    <h3>Smartwatch Amazfit Band 5</h3>
+    <img src="./images/img1.jpg" alt="Smartwatch Amazfit Band 5">
+    <p>O Smartwatch Amazfit Band 5 é ideal para quem deseja monitorar a saúde e o sono. Conta com monitor de saturação de oxigênio e registro de frequência cardíaca. Bateria de longa duração de até 15 dias.</p>
+    <p>R$ 249,00</p>
+    <button>Comprar</button>
+  </div>
+  
+  <div>
+    <h3>Smartband Xiaomi Mi Band 5</h3>
+    <img src="./images/img2.jpg" alt="Smartband Xiaomi Mi Band 5">
+    <p>A Mi Band 5 possui carregamento sem fio, uma tela maior que do modelo anterior, sensores de monitoramento de saúde atualizados, uma bateria com autonomia de até 14 dias, entre outros.</p>
+    <p>R$ 208,55</p>
+    <button>Comprar</button>
+  </div> 
+
+  <table style="width:100%" border="1px">
+    <tr>
+      <td></td>
+      <th>Preço</th>
+      <th>GPS</th>
+      <th>Oxímetro</th>
+      <th>À prova d’água</th>
+    </tr>
+    <tr>
+      <td>Amazfit Band 5</td>
+      <td>R$ 249,00</td>
+      <td>Não Integrado</td>
+      <td>Possui</td>
+      <td>Sim</td>
+    </tr>
+    <tr>
+      <td>Xiaomi Mi Band 5</td>
+      <td>R$ 208,55</td>
+      <td>Não Integrado</td>
+      <td>Não possui</td>
+      <td>Sim</td>
+    </tr>
+  </table>
+
+   
+  
+  <form action="http://web1-app.tadsufpr.net.br/test/form" method="post">
+    <p>Nome</p>
+    <input type="text" name="name">
+    <p>Selecione o produto</p>
+    <select name="produto" >
+      <option value="Amazfit Band 5">Amazfit Band 5</option>
+      <option value="Xiaomi Mi Band 5">Xiaomi Mi Band 5</option>
+    </select>
+    <p>Data de Nascimento</p>
+    <input type="date" name="date">
+    <p>Número do cartão</p>
+    <input type="number" name="number">
+    <p>CVV</p>
+    <input type="number" name="cvv" >
+    <input type="submit" value="comprar">
+
+  </form>
 </body>
 </html>
